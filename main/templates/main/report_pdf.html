@@ -1,0 +1,92 @@
+<head>
+    <style>
+        @page {
+            size: a4 portrait;
+            @frame header_frame {           /* Static Frame */
+                -pdf-frame-content: content_left;
+                left: 50pt; width: 524pt; top: 50pt; height: 120pt; float: left;
+            }
+            @frame header_frame {           /* Static Frame */
+                -pdf-frame-content: content_right;
+                float: right; left: 400pt;  width:512pt; top: 50pt;height: 120pt;
+            }
+            @frame content_frame {          /* Content Frame */
+                left: 50pt; width: 512pt; top: 150pt; height: 632pt;
+            }
+            @frame footer_frame {           /* Another static Frame */
+                -pdf-frame-content: footer_content;
+                left: 50pt; width: 512pt; top: 772pt; height: 20pt;
+            }
+        }
+    </style>
+    </head>
+    
+    <body>
+        <!-- Content for Static Frame 'header_frame' -->
+        <div id="header_content">
+            <div id="content_left">
+                <h1>{{patient.name}}</h1>
+                <p>Address : {{patient.address}}</p>
+                <p>Email : {{patient.o_email}}</p>
+                <p>Contact : {{report.o_tel}}</p>                
+            </div>
+            <div id="content_right">
+                <h4>Patient : {{report.p_name}}</h4>
+                <p>Age : {{report.p_age}}</p>
+                <p>Contact : {{report.p_phone}}</p>                                               
+                <h2>Report submitted : {{ report.submit_date }}</h2>
+            </div>
+        </div>
+    
+        <!-- Content for Static Frame 'footer_frame' -->
+        <div id="footer_content">(c) - page <pdf:pagenumber>
+            of <pdf:pagecount>
+        </div>
+        <!-- HTML Content -->
+        <hr>
+        <div class="testes">
+            <div class="test">
+                <h2>{{ report.test1}}</h2>
+                <p>{{ report.desc1}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test2}}</h2>
+                <p>{{ report.desc2}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test3}}</h2>
+                <p>{{ report.desc3}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test4}}</h2>
+                <p>{{ report.desc4}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test5}}</h2>
+                <p>{{ report.desc5}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test6}}</h2>
+                <p>{{ report.desc6}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test7}}</h2>
+                <p>{{ report.desc7}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test8}}</h2>
+                <p>{{ report.desc8}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test9}}</h2>
+                <p>{{ report.desc9}}</p>
+            </div>
+            <div class="test">
+                <h2>{{ report.test10}}</h2>
+                <p>{{ report.desc10}}</p>
+            </div>
+        </div>
+        
+    
+    </body>
+    </html>

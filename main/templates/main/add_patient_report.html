@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block contentTitle %}
+    Add Patient Report
+{% endblock contentTitle %}
+
+{% block content %}
+<form action="{% url 'add_patient_report' %}" method="post">
+    {% csrf_token %}
+<div class="row">
+<div class="col-md-12  mb-4">
+    <label>Patient's Number</label><br>
+    <input type="text" name="phone" size=40 placeholder="Patient Number"><br>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 1 : </label>
+    <input type="text" size=35 name="test1" id="test1" placeholder="Test Name"><br>
+    <label>Description 1 : </label>
+    <textarea  rows="3" cols="50" style="width: 40%;" class="input-group" type="text" name="desc1" placeholder="desc1"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 2 : </label>
+    <input type="text" size=35 name="test2" id="test2" placeholder="Test Name"><br>
+    <label>Description 2 : </label>
+    <textarea type="text" rows="3" cols="50" style="width: 40% " class="input-group" name="desc2" placeholder="desc2"> </textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 3 : </label>
+    <input type="text" size=35 name="test3" id="test3" placeholder="Test Name"><br>
+    <label>Description 3 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc3" class="input-group" placeholder="desc3"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 4 : </label>
+    <input type="text" size=35 name="test4" id="test4" placeholder="Test Name"><br>
+    <label>Description 4 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc4" class="input-group" placeholder="desc4"></textarea>
+</div> 
+<div class="col-md-12  p-4">
+    <label>Test 5 : </label>
+    <input type="text" size=35 name="test5" id="test5" placeholder="Test Name"><br>
+    <label>Description 5 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc5" class="input-group" placeholder="desc5"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 6 : </label>
+    <input type="text" size=35 name="test6" id="test6" placeholder="Test Name"><br>
+    <label>Description 6 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc6" class="input-group" placeholder="desc6"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 7 : </label>
+    <input type="text" size=35 name="test7" id="test7" placeholder="Test Name"><br>
+    <label>Description 7 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc7" class="input-group" placeholder="desc7"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 8 : </label>
+    <input type="text" size=35 name="test8" id="test8" placeholder="Test Name"><br>
+    <label>Description 8 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc8" class="input-group" placeholder="desc8"></textarea>
+</div>
+<div class="col-md-12  p-4">
+    <label>Test 9 : </label>
+    <input type="text" size=35 name="test9" id="test9" placeholder="Test Name"><br>
+    <label>Description 9 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc9" class="input-group" placeholder="desc9"></textarea>
+</div> 
+<div class="col-md-12  p-4">
+    <label>Test 10 : </label>
+    <input type="text" size=35 name="test10" id="test10" placeholder="Test Name"><br>
+    <label>Description 10 : </label>
+    <textarea rows="3" cols="50" style="width: 40% " type="text" name="desc10" class="input-group" placeholder="desc10"></textarea>
+</div>
+<div class="col-md-12  p-4   " >
+    <input class=" text-center btn btn-primary" type="submit">
+</div>
+</div>
+</form>
+{% endblock content %}
