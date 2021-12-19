@@ -1,4 +1,4 @@
-# _Covid19 hospital management_
+#Nursing Covid Patients And LAb Reporting System
 
 
 <!-- about us & view patient -->
